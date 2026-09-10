@@ -73,7 +73,7 @@ batch(age = 23)
 
 print(4,5,sep=':') #here keyword argument is sep and we are changing the default value for sep
 
-'''
+
 #keyword variable length argument (**kwargs) --> any number of keyword arguments,add is stored in dictionary
 
 def batch(**a):
@@ -89,3 +89,17 @@ data.update({'batch':'PFS-VSP-007'})
 print(data)
 
 #task - create a function with the usage of * and **
+def mobiles(*brand,**price):
+    """mobiles brand along with their price"""
+    print("mobile brand")
+    for mobile in brand:
+        print(brand)
+    for key,value in price.items():
+        print("brand",key)
+        print("price",value)
+
+mobiles("iphone","iqoo","samsung",
+        iphone = 100000,
+        iqoo = 50000,
+        samsung = 80000)
+'''
