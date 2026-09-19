@@ -150,7 +150,7 @@ def va(data):
 
 
 if __name__ == "__main__":
-    respond("Hey Praneeth.. Good to hear from you. How are you?")
+    respond("Hey Harsha.. Good to hear from you. How are you?")
     listening = True
     while listening:
         data = listen()
